@@ -205,16 +205,14 @@ public class MsgBase {
 
     private String getSequance(JSONObject account) {
         String res = (String) account
-//                .getJSONObject("result")
-                .getJSONObject("value")
+                .getJSONObject("account")
                 .get("sequence");
         return res;
     }
 
     private String getAccountNumber(JSONObject account) {
         String res = (String) account
-//                .getJSONObject("result")
-                .getJSONObject("value")
+                .getJSONObject("account")
                 .get("account_number");
         return res;
     }
